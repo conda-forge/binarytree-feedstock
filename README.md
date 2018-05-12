@@ -19,12 +19,15 @@ Heaps and BSTs (binary search trees) are also supported.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/binarytree-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/binarytree-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/binarytree-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/binarytree-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/binarytree/badges/version.svg)](https://anaconda.org/conda-forge/binarytree)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/binarytree/badges/downloads.svg)](https://anaconda.org/conda-forge/binarytree)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-binarytree-green.svg)](https://anaconda.org/conda-forge/binarytree) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/binarytree.svg)](https://anaconda.org/conda-forge/binarytree) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/binarytree.svg)](https://anaconda.org/conda-forge/binarytree) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/binarytree.svg)](https://anaconda.org/conda-forge/binarytree) |
 
 Installing binarytree
 =====================
