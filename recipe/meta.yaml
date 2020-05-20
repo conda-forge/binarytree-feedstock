@@ -1,6 +1,6 @@
 {% set name = "binarytree" %}
-{% set version = "4.1.0" %}
-{% set sha256 = "e1fae273b81de7cfe97f6ac25ccb01e1d2bfe8b7f721f5543464aeaae99272d4" %}
+{% set version = "5.0.0" %}
+{% set sha256 = "9a0be5c059e31c57ba223c8c184421b4ed7019d5a5933ee4f27771bf6b46434d" %}
 
 package:
   name: {{ name|lower }}
@@ -33,7 +33,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Python Library for Learning Binary Trees'
+  summary: Python Library for Learning Binary Trees
   description: |
     Are you studying binary trees for your next exam, assignment or technical interview?
     Binarytree is a Python library which provides a simple API to generate, visualize,
