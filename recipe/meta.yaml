@@ -1,6 +1,6 @@
 {% set name = "binarytree" %}
-{% set version = "5.0.0" %}
-{% set sha256 = "9a0be5c059e31c57ba223c8c184421b4ed7019d5a5933ee4f27771bf6b46434d" %}
+{% set version = "5.1.0" %}
+{% set sha256 = "27f0d30aff5c9b8d8dc7b3fc73f73a44f5030fc7136814f9af389439ba55bf3a" %}
 
 package:
   name: {{ name|lower }}
