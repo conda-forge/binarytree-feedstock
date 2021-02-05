@@ -1,45 +1,51 @@
 {% set name = "binarytree" %}
-{% set version = "5.1.0" %}
-{% set sha256 = "27f0d30aff5c9b8d8dc7b3fc73f73a44f5030fc7136814f9af389439ba55bf3a" %}
+{% set version = "6.0.0" %}
+
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/joowani/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/binarytree-{{ version }}.tar.gz
+  sha256: 5cfae0c39d3fce5d25f58f470ac53969523bfbecd8a512aa98d998d03695eb28
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
   noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
-    - python
-    - setuptools
+  host:
+    - pip
+    - python >=3.6
+    - setuptools_scm >=3.4
   run:
-    - python
+    - python >=3.6
+    - python-graphviz
+    - setuptools >=42
+    - setuptools_scm >=3.4
 
 test:
   imports:
     - binarytree
-    - binarytree.exceptions
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
-  home: http://github.com/joowani/binarytree
+  home: https://github.com/joowani/binarytree
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: Python Library for Learning Binary Trees
+  summary: Python Library for Studying Binary Trees
   description: |
     Are you studying binary trees for your next exam, assignment or technical interview?
-    Binarytree is a Python library which provides a simple API to generate, visualize,
-    inspect and manipulate binary trees. It allows you to skip the tedious work of
-    setting up test data, and dive straight into practising your algorithms!
-    Heaps and BSTs (binary search trees) are also supported.
+    Binarytree is a Python library which lets you generate, visualize, inspect and
+    manipulate binary trees. Skip the tedious work of setting up test data, and dive
+    straight into practising your algorithms! Heaps and BSTs (binary search trees) are
+    also supported.
   doc_url: http://binarytree.readthedocs.io
   dev_url: http://github.com/joowani/binarytree
 
