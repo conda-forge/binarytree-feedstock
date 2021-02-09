@@ -1,5 +1,5 @@
 {% set name = "binarytree" %}
-{% set version = "6.0.0" %}
+{% set version = "6.1.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/binarytree-{{ version }}.tar.gz
-  sha256: 5cfae0c39d3fce5d25f58f470ac53969523bfbecd8a512aa98d998d03695eb28
+  sha256: 6c0431a1e629871085a320babdde871156c4c99bc64d47b42a413c46460fc5af
 
 build:
   number: 0

@@ -1,19 +1,23 @@
 About binarytree
 ================
 
-Home: http://github.com/joowani/binarytree
+Home: https://github.com/joowani/binarytree
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/binarytree-feedstock/blob/master/LICENSE.txt)
 
-Summary: Python Library for Learning Binary Trees
+Summary: Python Library for Studying Binary Trees
+
+Development: http://github.com/joowani/binarytree
+
+Documentation: http://binarytree.readthedocs.io
 
 Are you studying binary trees for your next exam, assignment or technical interview?
-Binarytree is a Python library which provides a simple API to generate, visualize,
-inspect and manipulate binary trees. It allows you to skip the tedious work of
-setting up test data, and dive straight into practising your algorithms!
-Heaps and BSTs (binary search trees) are also supported.
+Binarytree is a Python library which lets you generate, visualize, inspect and
+manipulate binary trees. Skip the tedious work of setting up test data, and dive
+straight into practising your algorithms! Heaps and BSTs (binary search trees) are
+also supported.
 
 
 Current build status
