@@ -7,21 +7,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/binarytree-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/binarytree-{{ version }}.tar.gz
   sha256: cbe4f7c300e357494b392b0dd5dc4dfd9971bb7b430e07ee74a30cab92e4b511
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools_scm >=3.4
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - python-graphviz
     - setuptools >=42
     - setuptools_scm >=3.4
@@ -33,6 +33,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/joowani/binarytree
